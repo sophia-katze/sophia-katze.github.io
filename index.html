@@ -6,15 +6,15 @@
     <title>Sophia Helena - Data Scientist</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="#">Sophia Helena</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
@@ -41,27 +41,31 @@
     </nav>
 
     <!-- Header Section -->
-    <header class="bg-light text-center py-5">
+    <header class="header-section d-flex align-items-center justify-content-center text-center">
         <div class="container">
             <h1 class="display-4">Sophia Helena</h1>
             <p class="lead">Senior Machine Learning Engineer @ Zurich Santander</p>
-            <p class="text-muted">Data Engineer, Data Scientist, Data Analyst | Python, SQL, Spark/PySpark, Databricks, TensorFlow, Pandas, NLP, LLM, ETL/ELT, Azure, AWS</p>
+            <p class="skills">Data Engineer, Data Scientist, Data Analyst | Python, SQL, Spark/PySpark, Databricks, TensorFlow, Pandas, NLP, LLM, ETL/ELT, Azure, AWS</p>
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
-            <h2 class="mb-4 text-primary">About Me</h2>
-            <p>Hello! I'm Sophia Helena, a 25-year-old, highly analytical, and data-driven professional with over 9 years of hands-on experience molding data into actionable insights. Currently, I work as a Senior Machine Learning Engineer at Zurich Santander.</p>
-            <p>My journey began in July 2015, and since then, I've been at the forefront of leveraging cutting-edge technologies like Python, PySpark/Spark, Pandas, CI/CD, SQL, ETL modeling, and Cloud (AWS and Azure) to tackle complex challenges across diverse industries. I'm deeply passionate about the evolving landscape of the data stack, where data engineering seamlessly integrates with data science and analysis.</p>
+            <h2 class="section-title text-center">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p>Hello! I'm Sophia Helena, a 25-year-old, highly analytical, and data-driven professional with over 9 years of hands-on experience molding data into actionable insights. Currently, I work as a Senior Machine Learning Engineer at Zurich Santander.</p>
+                    <p>My journey began in July 2015, and since then, I've been at the forefront of leveraging cutting-edge technologies like Python, PySpark/Spark, Pandas, CI/CD, SQL, ETL modeling, and Cloud (AWS and Azure) to tackle complex challenges across diverse industries. I'm deeply passionate about the evolving landscape of the data stack, where data engineering seamlessly integrates with data science and analysis.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="bg-light py-5">
+    <section id="experience" class="bg-black py-5">
         <div class="container">
-            <h2 class="mb-4 text-primary">Experience</h2>
+            <h2 class="section-title text-center">Experience</h2>
 
             <!-- Zurich Santander -->
             <div class="card mb-4 shadow-sm">
@@ -84,7 +88,7 @@
             <!-- AB InBev -->
             <div class="card mb-4 shadow-sm">
                 <div class="card-body">
-                    <h3 class="card-title">Data Engineer @ AB InBev</h3>
+                    <h3 class="card-title">Senior Data Engineer @ AB InBev</h3>
                     <p class="card-text">Extracted and transformed high-volume data from various sources, ensured data quality, and loaded data into Data Warehouses like Snowflake and Azure Synapse Analytics. Developed CI/CD pipelines using GitHub Actions and Azure DevOps to automate software and data product deployments. Prioritized data and code quality through peer reviews, unit tests, and internal metrics.</p>
                     <h5>Technologies Used:</h5>
                     <ul>
@@ -120,59 +124,62 @@
                 </div>
             </div>
 
-            <!-- Additional Experiences -->
-            <!-- Add more experience cards here if needed -->
-
+            <!-- Add more experiences if needed -->
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="mb-4 text-primary">Projects</h2>
+            <h2 class="section-title text-center">Projects</h2>
             <div class="row g-4">
                 <!-- Project 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">IAG_USP-GRARED - Potential Methods Lab Project</h5>
-                            <a href="https://github.com/sophia-helena-paula/IAG_USP-GRARED-v2" target="_blank" class="btn btn-primary">View on GitHub</a>
+                            <p class="card-text">A project focused on developing potential methods for data analysis and machine learning applications.</p>
+                            <a href="https://github.com/sophia-helena-paula/IAG_USP-GRARED-v2" target="_blank" class="btn btn-project mt-auto">View on GitHub</a>
                         </div>
                     </div>
                 </div>
                 <!-- Project 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Predict LOL - Community Challenge</h5>
-                            <a href="https://github.com/sophia-helena-paula/dados_de_fato-predict_lol" target="_blank" class="btn btn-primary">View on GitHub</a>
+                            <p class="card-text">Participated in a community challenge to predict outcomes in the League of Legends game using machine learning techniques.</p>
+                            <a href="https://github.com/sophia-helena-paula/dados_de_fato-predict_lol" target="_blank" class="btn btn-project mt-auto">View on GitHub</a>
                         </div>
                     </div>
                 </div>
                 <!-- Project 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Data Scientist Test - Geo Analysis</h5>
-                            <a href="https://github.com/sophia-helena-paula/data-scientist-test-01-geo" target="_blank" class="btn btn-primary">View on GitHub</a>
+                            <p class="card-text">Conducted geographical data analysis to derive meaningful insights and patterns.</p>
+                            <a href="https://github.com/sophia-helena-paula/data-scientist-test-01-geo" target="_blank" class="btn btn-project mt-auto">View on GitHub</a>
                         </div>
                     </div>
                 </div>
                 <!-- Project 4 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Data Scientist Test - NLP Challenge</h5>
-                            <a href="https://github.com/sophia-helena-paula/data-scientist-test-02-nlp" target="_blank" class="btn btn-primary">View on GitHub</a>
+                            <p class="card-text">Worked on natural language processing challenges to improve text analysis and sentiment detection.</p>
+                            <a href="https://github.com/sophia-helena-paula/data-scientist-test-02-nlp" target="_blank" class="btn btn-project mt-auto">View on GitHub</a>
                         </div>
                     </div>
                 </div>
                 <!-- Project 5 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Data Engineering Test - Spark & ETL</h5>
-                            <a href="https://github.com/sophia-helena-paula/data-engineering-test-01-spark" target="_blank" class="btn btn-primary">View on GitHub</a>
+                            <p class="card-text">Developed ETL processes using Spark to handle large datasets efficiently.</p>
+                            <a href="https://github.com/sophia-helena-paula/data-engineering-test-01-spark" target="_blank" class="btn btn-project mt-auto">View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -181,26 +188,31 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-light py-5">
+    <section id="contact" class="bg-black py-5">
         <div class="container text-center">
-            <h2 class="mb-4 text-primary">Contact</h2>
+            <h2 class="section-title">Contact</h2>
             <p>Let's connect!</p>
             <div class="d-flex justify-content-center gap-3">
-                <a href="https://www.linkedin.com/in/sophia-helena/" target="_blank" class="btn btn-outline-primary">LinkedIn</a>
-                <a href="https://bsky.app/profile/sophia.meoow.dev" target="_blank" class="btn btn-outline-primary">Bluesky</a>
+                <a href="https://www.linkedin.com/in/sophia-helena/" target="_blank" class="btn btn-outline-project">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://bsky.app/profile/sophia.meoow.dev" target="_blank" class="btn btn-outline-project">
+                    <i class="fab fa-bluesky"></i> Bluesky
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-black text-center text-white py-3">
         <div class="container">
             <p class="mb-0">&copy; 2024 Sophia Helena. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <!-- Bootstrap JS (with Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Optional: Custom JS -->
 </body>
 </html>
