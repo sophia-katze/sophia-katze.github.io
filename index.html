@@ -1,81 +1,206 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophia Helena - Cientista de Dados</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Sophia Helena - Data Scientist</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
         <div class="container">
-            <h1>Sophia Helena</h1>
-            <p>Senior Machine Learning Engineer @ Zurich Santander</p>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+            <a class="navbar-brand" href="#">Sophia Helena</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Sophia Helena</h1>
+            <p class="lead">Senior Machine Learning Engineer @ Zurich Santander</p>
+            <p class="text-muted">Data Engineer, Data Scientist, Data Analyst | Python, SQL, Spark/PySpark, Databricks, TensorFlow, Pandas, NLP, LLM, ETL/ELT, Azure, AWS</p>
         </div>
     </header>
 
-    <section id="sobre" class="sobre">
+    <!-- About Section -->
+    <section id="about" class="py-5">
         <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Meu nome é Sophia Helena, uma profissional altamente analítica e orientada por dados com 25 anos e mais de 9 anos de experiência prática transformando dados em insights acionáveis. Atualmente, trabalho como Senior Machine Learning Engineer na Zurich Santander.</p>
-            <p>Desde julho de 2015, estou na vanguarda do uso de tecnologias de ponta como Python, PySpark, Pandas, CI/CD, SQL, modelagem ETL e Cloud (AWS e Azure) para enfrentar desafios complexos em diversas indústrias. Sou apaixonada pelo cenário em evolução do data stack, onde a engenharia de dados se integra profundamente com a ciência e análise de dados.</p>
+            <h2 class="mb-4 text-primary">About Me</h2>
+            <p>Hello! I'm Sophia Helena, a 25-year-old, highly analytical, and data-driven professional with over 9 years of hands-on experience molding data into actionable insights. Currently, I work as a Senior Machine Learning Engineer at Zurich Santander.</p>
+            <p>My journey began in July 2015, and since then, I've been at the forefront of leveraging cutting-edge technologies like Python, PySpark/Spark, Pandas, CI/CD, SQL, ETL modeling, and Cloud (AWS and Azure) to tackle complex challenges across diverse industries. I'm deeply passionate about the evolving landscape of the data stack, where data engineering seamlessly integrates with data science and analysis.</p>
         </div>
     </section>
 
-    <section id="experiencias" class="experiencias">
+    <!-- Experience Section -->
+    <section id="experience" class="bg-light py-5">
         <div class="container">
-            <h2>Experiências Recentes</h2>
-            <div class="experiencia">
-                <h3>Senior Machine Learning Engineer @ Zurich Santander</h3>
-                <p>Responsável pela manutenção e criação de APIs Python, integração de modelos de ML em produção, análise estatística e comparação de modelos, melhoria contínua dos modelos em produção e implementação de diretrizes de Clean Code.</p>
+            <h2 class="mb-4 text-primary">Experience</h2>
+
+            <!-- Zurich Santander -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Senior Machine Learning Engineer @ Zurich Santander</h3>
+                    <p class="card-text">Responsible for the maintenance and creation of Python APIs, integrating ML models into production, statistical analysis and comparison of ML models, continuous improvement of production models, and implementing Clean Code guidelines.</p>
+                    <h5>Technologies Used:</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>TensorFlow</li>
+                        <li>PySpark/Spark</li>
+                        <li>Databricks</li>
+                        <li>SQL</li>
+                        <li>Azure & AWS</li>
+                        <li>CI/CD Pipelines</li>
+                    </ul>
+                </div>
             </div>
-            <div class="experiencia">
-                <h3>Data Engineer @ AB InBev</h3>
-                <p>Extração e transformação de dados em grande volume de várias fontes, garantindo a qualidade e carregando em Data Warehouses como Snowflake e Azure Synapse Analytics. Desenvolvimento de pipelines CI/CD utilizando GitHub Actions e Azure DevOps.</p>
+
+            <!-- AB InBev -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Data Engineer @ AB InBev</h3>
+                    <p class="card-text">Extracted and transformed high-volume data from various sources, ensured data quality, and loaded data into Data Warehouses like Snowflake and Azure Synapse Analytics. Developed CI/CD pipelines using GitHub Actions and Azure DevOps to automate software and data product deployments. Prioritized data and code quality through peer reviews, unit tests, and internal metrics.</p>
+                    <h5>Technologies Used:</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>PySpark/Spark</li>
+                        <li>SQL</li>
+                        <li>Snowflake</li>
+                        <li>Azure Synapse Analytics</li>
+                        <li>GitHub Actions</li>
+                        <li>Azure DevOps</li>
+                        <li>ETL Modeling</li>
+                    </ul>
+                </div>
             </div>
-            <div class="experiencia">
-                <h3>Senior Data Scientist @ Pie</h3>
-                <p>Integração de modelos em produção na Amazon AWS, implementação de diretrizes de Clean Code, análises estatísticas para otimização de modelos de machine learning, desenvolvimento de APIs Python com FastAPI e aplicação de NLP e análise de sentimentos usando NLTK e BERT.</p>
+
+            <!-- Pie -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Senior Data Scientist @ Pie</h3>
+                    <p class="card-text">Led the integration of models into production on Amazon AWS, implemented Clean Code guidelines, and conducted statistical analyses to optimize machine learning models. Developed Python APIs with FastAPI, performed web scraping with Beautiful Soup and Selenium, and applied NLP and sentiment analysis using NLTK and BERT. Explored OCR technologies with Keras OCR and Tesseract.</p>
+                    <h5>Technologies Used:</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>FastAPI</li>
+                        <li>Beautiful Soup</li>
+                        <li>Selenium</li>
+                        <li>NLP (NLTK, BERT)</li>
+                        <li>Keras OCR</li>
+                        <li>Tesseract</li>
+                        <li>Amazon AWS</li>
+                        <li>Clean Code Practices</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Experiences -->
+            <!-- Add more experience cards here if needed -->
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="mb-4 text-primary">Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">IAG_USP-GRARED - Potential Methods Lab Project</h5>
+                            <a href="https://github.com/sophia-helena-paula/IAG_USP-GRARED-v2" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Predict LOL - Community Challenge</h5>
+                            <a href="https://github.com/sophia-helena-paula/dados_de_fato-predict_lol" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Scientist Test - Geo Analysis</h5>
+                            <a href="https://github.com/sophia-helena-paula/data-scientist-test-01-geo" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Scientist Test - NLP Challenge</h5>
+                            <a href="https://github.com/sophia-helena-paula/data-scientist-test-02-nlp" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Engineering Test - Spark & ETL</h5>
+                            <a href="https://github.com/sophia-helena-paula/data-engineering-test-01-spark" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projetos" class="projetos">
-        <div class="container">
-            <h2>Projetos</h2>
-            <ul>
-                <li><a href="https://github.com/sophia-helena-paula/IAG_USP-GRARED-v2" target="_blank">IAG_USP-GRARED - Potential Methods Lab Project</a></li>
-                <li><a href="https://github.com/sophia-helena-paula/dados_de_fato-predict_lol" target="_blank">Predict LOL - Community Challenge</a></li>
-                <li><a href="https://github.com/sophia-helena-paula/data-scientist-test-01-geo" target="_blank">Data Scientist Test - Geo Analysis</a></li>
-                <li><a href="https://github.com/sophia-helena-paula/data-scientist-test-02-nlp" target="_blank">Data Scientist Test - NLP Challenge</a></li>
-                <li><a href="https://github.com/sophia-helena-paula/data-engineering-test-01-spark" target="_blank">Data Engineering Test - Spark & ETL</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contato" class="contato">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Vamos nos conectar!</p>
-            <div class="redes-sociais">
-                <a href="https://www.linkedin.com/in/sophia-helena/" target="_blank">LinkedIn</a>
-                <a href="https://bsky.app/profile/sophia.meoow.dev" target="_blank">Bluesky</a>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 text-primary">Contact</h2>
+            <p>Let's connect!</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://www.linkedin.com/in/sophia-helena/" target="_blank" class="btn btn-outline-primary">LinkedIn</a>
+                <a href="https://bsky.app/profile/sophia.meoow.dev" target="_blank" class="btn btn-outline-primary">Bluesky</a>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <p>&copy; 2024 Sophia Helena. Todos os direitos reservados.</p>
+            <p class="mb-0">&copy; 2024 Sophia Helena. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Bootstrap JS (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Optional: Custom JS -->
 </body>
 </html>
