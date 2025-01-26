@@ -4,7 +4,7 @@
 /* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #000; /* Pure Black */
+    background-color: #050a30; /* Azul escuro */
     color: #fff; /* White */
     margin-top: 70px; /* To prevent content from hiding behind the fixed navbar */
 }
@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-    color: #ddd;
+    color: #ff00ff; /* Magenta */
     text-decoration: underline;
 }
 
@@ -30,6 +30,7 @@ a:hover {
     margin-bottom: 1.5rem;
     position: relative;
     display: inline-block;
+    color: #00ffff; /* Ciano */
 }
 
 .section-title::after {
@@ -43,7 +44,7 @@ a:hover {
 
 /* Header Section */
 .header-section {
-    background: #000;
+    background: #050a30; /* Azul escuro */
     color: #fff;
     padding: 100px 0;
     position: relative;
@@ -67,11 +68,13 @@ a:hover {
 .header-section h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
+    color: #ff00ff; /* Magenta */
 }
 
 .header-section .lead {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: #00ffff; /* Ciano */
 }
 
 .header-section .skills {
@@ -83,6 +86,7 @@ a:hover {
 #about p {
     font-size: 1.1rem;
     line-height: 1.6;
+    color: #ccc;
 }
 
 /* Experience Section */
@@ -99,7 +103,7 @@ a:hover {
 }
 
 #experience .card-title {
-    color: #fff;
+    color: #ff00ff; /* Magenta */
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
@@ -108,7 +112,7 @@ a:hover {
     list-style-type: disc;
     margin-left: 20px;
     margin-bottom: 0.5rem;
-    color: #ccc;
+    color: #00ffff; /* Ciano */
 }
 
 /* Projects Section */
@@ -127,16 +131,17 @@ a:hover {
 #projects .card-title {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
+    color: #ff00ff; /* Magenta */
 }
 
 #projects .card-text {
     flex-grow: 1;
-    color: #ccc;
+    color: #00ffff; /* Ciano */
 }
 
 .btn-project {
     background-color: #fff;
-    color: #000;
+    color: #050a30; /* Azul escuro */
     border: none;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -156,12 +161,12 @@ a:hover {
 
 #contact .btn-outline-project:hover {
     background-color: #fff;
-    color: #000;
+    color: #050a30; /* Azul escuro */
 }
 
 /* Footer */
 footer {
-    background-color: #000;
+    background-color: #050a30; /* Azul escuro */
     color: #fff;
 }
 
